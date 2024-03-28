@@ -1,3 +1,13 @@
+// --------- миксины ---------
+h2{
+  @include secondLevelHeading;
+}
+h4{
+  @include fourthLevelHeading;
+}
+
+
+
 .title{
   background:  linear-gradient(
     to right,
@@ -109,13 +119,3 @@ ul .advantages__aitem{
   display: flex;
   justify-content: center;
 }
-.icon__bnt{
-	width: 40px;
-	height: 40px;
-  background-color:#4D5AE5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-

@@ -15,3 +15,24 @@
 		@content;
 	}
 }
+
+@mixin secondLevelHeading (){
+color: var(--NAVY-BLUE, #2E2F42);
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.72px;
+}
+
+@mixin fourthLevelHeading (){
+	color: var(--NAVY-BLUE, #2E2F42);
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.4px;
+}

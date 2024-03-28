@@ -10,7 +10,7 @@
 	width: 16px;
 	height: 16px;
 }
-.icon__footer-bnt{
+.icon__bnt{
 	fill: transparent;
 	stroke: transparent;
 	width: 24px;
@@ -23,6 +23,9 @@
 .icon--linkedin-line,
 .icon--bnt-line{
 	fill: #F4F4FD;
+}
+.team__aitem{
+	padding: 0 0 32px 0;
 }
 .icon__bnt{
 	width: 40px;
@@ -38,4 +41,9 @@
 			
 		}
 }
-
+.team__aitem a:not(:last-child){
+	margin: 0 24px 0 0 ;
+}
+.team__aitem-footer a:not(:last-child){
+	margin: 0 16px 0 0 ;
+}

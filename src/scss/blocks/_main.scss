@@ -94,6 +94,10 @@ ul .advantages__aitem{
   line-height: 40px;
   letter-spacing: 0.72px;
   margin: 96px 0 72px 0;
+  max-width: 264px;
+} 
+.team ul li{
+  max-width: 264px;
 }
 .team__title{
   h3{
@@ -118,4 +122,27 @@ ul .advantages__aitem{
 .team__aitem{
   display: flex;
   justify-content: center;
+}
+.team__title h3{
+	margin: 32px 0 0 0;
+}
+.team__title p{
+	margin: 8px 0;
+}
+.team ul li:not(:last-child){
+  margin: 0 0 72px 0;
+}
+.team ul li{
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio h2{
+  margin: 0 0 72px 0;
+}
+.cards__title ul li:not(:last-child){
+  margin: 0 0 48px 0;
+}
+.portfolio__aitem{
+  border-right: 1px solid var(--CORNFLOWER, #E7E9FC);
+  border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+  border-left: 1px solid var(--CORNFLOWER, #E7E9FC);
 }

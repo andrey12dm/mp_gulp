@@ -1,0 +1,29 @@
+.title__header{
+	display: flex;
+	justify-content: space-between;
+}
+.logo__color{
+	color: var(--IRIS, #4D5AE5);
+	font-family: Raleway;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 21px;
+	letter-spacing: 0.54px;
+	text-transform: uppercase;
+	}
+.text__color{
+	color: var(--NAVY-BLUE, #2E2F42);
+	font-family: Raleway;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 21px;
+	letter-spacing: 0.54px;
+	text-transform: uppercase;
+	}
+
+	.title__menu,.title__mobile{
+		display: none;
+	}
+	

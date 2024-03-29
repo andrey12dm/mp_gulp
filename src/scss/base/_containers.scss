@@ -10,6 +10,11 @@
 	max-width: var(--wraper-mobil);
 	padding: var(--wraper-padding) ;
 	margin: var(--centr-mobile);
+	@include tablet {
+		max-width: 768px;
+		padding: 0 16px ;
+		margin: 0 auto;
+	}
 }
 .container {
 	margin: 0 auto;

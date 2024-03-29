@@ -33,6 +33,10 @@
 	letter-spacing: 0.32px;
 	margin: 18px 0 72px 0;
 	text-align: left;
+	@include tablet {
+		margin: 18px 24px 0 0;
+		max-width: 264px;
+	}
 }
 .icon__footer h4{
 	color: #FFFFFF;
@@ -55,6 +59,10 @@
 	letter-spacing: 0.32px;
 	text-align: center;
 	margin: 72px 0 16px 0;
+	@include tablet {
+			text-align-last: left;
+			margin: 72px 0 16px 147px;
+	}
 }
 .form__email{
 	border-radius: 4px;
@@ -63,6 +71,10 @@
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	background: var(--NAVY-BLUE, #2E2F42);
 	width: 100%;
+	@include tablet {
+		max-width: 264px;
+		margin: 0 24px 0 0;
+	}
 }
 [type="text"]{
 	color: var(--WHITE, #FFF);
@@ -78,6 +90,7 @@ padding: 8px 16px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 0 0 96px 0;
 }
 .footer__bnt{
 	border-radius: 4px;
@@ -92,7 +105,10 @@ padding: 8px 16px;
 	letter-spacing: 0.64px;
 	padding: 8px 24px;
 	margin: 16px 0 0 0;
-	align-items: center
+	align-items: center;
+	@include tablet {
+		margin: 0 0 0 0;
+	}
 }
 .footer__bnt svg{
 margin: 0 0 0 16px;
@@ -100,4 +116,11 @@ margin: 0 0 0 16px;
 .team__aitem-footer{
 	display: flex;
 	justify-content: center;
+}
+@include tablet {
+		.centr__footer{
+			display: flex;
+			justify-content: center;
+			margin: 98px 0 0 0;
+		}
 }

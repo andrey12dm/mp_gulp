@@ -38,17 +38,17 @@
 						</div>
 						<div class="title__menu">
 							<nav>
-								<ul>
-									<li>Studio</li>
-									<li>Portfolio</li>
-									<li>Contacts</li>
+								<ul class="header__menu">
+									<li class="underlining"><a href="#">Studio</a></li>
+									<li><a href="">Portfolio</a></li>
+									<li><a href="">Contacts</a></li>
 								</ul>
 							</nav>
 						</div>
 						<div class="title__mobile">
 							<ul>
-								<li><a href="#">+11 (000) 111-11-11</a></li>
-								<li><a href="#">info@devstudio.com</a></li>
+								<li><a href="tel:110001111111">+11 (000) 111-11-11</a></li>
+								<li><a href="   mailto:info@devstudio.com">info@devstudio.com</a></li>
 							</ul>
 						</div>
 					</div>
@@ -75,7 +75,7 @@
 			</section>
 			<section class="advantages">
 				<div class="wraper">
-					<ul advantages__title>
+					<ul class="advantages__title">
 						<li class="advantages__aitem">
 							<h3>Strategy</h3>
 							<p>Our goal is&#160;to&#160;identify the business problem to&#160;walk away with the perfect and creative solution.</p>
@@ -97,9 +97,11 @@
 			</section>
 			<section class="team">
 				<div class="wraper">
-					<h2 class="team__main">Our Team</h2>
-					<ul>
-						<li>
+					<div class="team__main">
+						<h2 class="team__main">Our Team</h2>
+					</div>
+					<ul class="flex__team">
+						<li class="flex__portfolio">
 							<div class="team__title">
 								<picture>
 									<source srcset="./img/mobile/guerrero.jpg 1x, ./img/mobile/retina/guerrero@2x.jpg 2x" type="image/webp" />
@@ -139,7 +141,7 @@
 								</ul>
 							</div>
 						</li>
-						<li>
+						<li class="flex__portfolio">
 							<div class="team__title">
 								<picture>
 									<source srcset="./img/mobile/ford.jpg 1x, ./img/mobile/retina/ford@2x.jpg 2x" type="image/webp" />
@@ -180,7 +182,7 @@
 								</ul>
 							</div>
 						</li>
-						<li>
+						<li class="flex__portfolio">
 							<div class="team__title">
 								<picture>
 									<source srcset="./img/mobile/garcia.jpg 1x, ./img/mobile/retina/garcia@2x.jpg 2x" type="image/webp" />
@@ -221,12 +223,12 @@
 								</ul>
 							</div>
 						</li>
-						<li>
+						<li class="flex__portfolio">
 							<div class="team__title">
 								<picture>
 									<source srcset="./img/mobile/wilson.jpg 1x, ./img/mobile/retina/wilson@2x.jpg 2x" type="image/webp" />
 									<source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp" />
-									<img src="./img/mobile/guerrero.png" alt="Mark Guerrero" />
+									<img src="./img/mobile/guerrero.jpg" alt="Mark Guerrero" />
 								</picture>
 								<h3>Daniel Wilson</h3>
 								<p>UI&#160;Designer</p>
@@ -270,47 +272,72 @@
 					<div>
 						<h2>Our Portfolio</h2>
 						<div class="cards__title">
-							<ul>
-								<li>
-									<img src="" alt="" />
+							<ul class="cards__portaolio">
+								<li class="cards__item">
+									<picture>
+										<source srcset="./img/mobile/banking-app.jpg 1x, ./img/mobile/retina/banking-app@2x.jpg 2x" type="image/webp" />
+										<source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp" />
+										<img src="./img/mobile/banking-app.jpg" alt="Banking App" />
+									</picture>
 									<div class="portfolio__aitem">
-										<h4>Banking App</h4>
-										<p>App</p>
+										<h4 class="centre">Banking App</h4>
+										<p class="text__centre">App</p>
 									</div>
 								</li>
-								<li>
+								<li class="cards__item">
+									<picture>
+										<source srcset="./img/mobile/cashless-payment.jpg 1x, ./img/mobile/retina/cashless-payment@2x.jpg 2x" type="image/webp" />
+										<source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp" />
+										<img src="./img/mobile/cashless-payment.jpg" alt="Mark Guerrero" />
+									</picture>
 									<div class="portfolio__aitem">
 										<img src="" alt="" />
-										<h4>Cashless Payment</h4>
-										<p>Marketing</p>
+										<h4 class="centre">Cashless Payment</h4>
+										<p class="text__centre">Marketing</p>
 									</div>
 								</li>
-								<li>
+								<li class="cards__item">
+									<picture>
+										<source srcset="./img/mobile/meditation-app.jpg 1x, ./img/mobile/retina/meditation-app@2x.jpg 2x" type="image/webp" />
+										<source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp" />
+										<img src="./img/mobile/meditation-app.jpg" alt="Mark Guerrero" />
+									</picture>
 									<div class="portfolio__aitem">
-										<img src="" alt="" />
-										<h4>Meditation App</h4>
-										<p>App</p>
+										<h4 class="centre">Meditation App</h4>
+										<p class="text__centre">App</p>
 									</div>
 								</li>
-								<li>
+								<li class="cards__item">
+									<picture>
+										<source srcset="./img/mobile/taxi-service.jpg 1x, ./img/mobile/retina/taxi-service@2x.jpg 2x" type="image/webp" />
+										<source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp" />
+										<img src="./img/mobile/taxi-service.jpg" alt="Mark Guerrero" />
+									</picture>
 									<div class="portfolio__aitem">
-										<img src="" alt="" />
-										<h4>Taxi Service</h4>
-										<p>Marketing</p>
+										<h4 class="centre">Taxi Service</h4>
+										<p class="text__centre">Marketing</p>
 									</div>
 								</li>
-								<li>
+								<li class="cards__item">
+									<picture>
+										<source srcset="./img/mobile/screen-lllustrations.jpg 1x, ./img/mobile/retina/screen-lllustrations@2x.jpg 2x" type="image/webp" />
+										<source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp" />
+										<img src="./img/mobile/screen-lllustrations.jpg" alt="Mark Guerrero" />
+									</picture>
 									<div class="portfolio__aitem">
-										<img src="" alt="" />
-										<h4>Screen Illustrations</h4>
-										<p>Design</p>
+										<h4 class="centre">Screen Illustrations</h4>
+										<p class="text__centre">Design</p>
 									</div>
 								</li>
-								<li>
+								<li class="cards__item">
+									<picture class="marttert">
+										<source srcset="./img/mobile/online-courses.jpg 1x, ./img/mobile/retina/online-courses@2x.jpg 2x" type="image/webp" />
+										<source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp" />
+										<img src="./img/mobile/online-courses.jpg" alt="Mark Guerrero" />
+									</picture>
 									<div class="portfolio__aitem">
-										<img src="" alt="" />
-										<h4>Online Courses</h4>
-										<p>Marketing</p>
+										<h4 class="centre">Online Courses</h4>
+										<p class="text__centre">Marketing</p>
 									</div>
 								</li>
 							</ul>
@@ -322,42 +349,46 @@
 		<footer class="footer">
 			<div class="wraper">
 				<div>
-					<a class="logo__footer" href="#">
-						<p class="text__footer"><span class="color__web">Web</span>Studio</p>
-					</a>
-					<p class="title_footer">Increase the flow of&#160;customers and sales for your business with digital marketing & growth solutions.</p>
-					<div class="icon__footer">
-						<h4>Social media</h4>
-						<ul class="team__aitem-footer">
-							<a href="#">
-								<li class="icon__bnt">
-									<svg class="icon icon--istagram-line">
-										<use href="./img/svgsprite/sprite.symbol.svg#instagram-line"></use>
-									</svg>
-								</li>
+					<div class="centr__footer">
+						<div class="flex__footer">
+							<a class="logo__footer" href="#">
+								<p class="text__footer"><span class="color__web">Web</span>Studio</p>
 							</a>
-							<a href="#">
-								<li class="icon__bnt">
-									<svg class="icon icon--twitter-line">
-										<use href="./img/svgsprite/sprite.symbol.svg#twitter-line"></use>
-									</svg>
-								</li>
-							</a>
-							<a href="#">
-								<li class="icon__bnt">
-									<svg class="icon icon--facebook-line">
-										<use href="./img/svgsprite/sprite.symbol.svg#facebook-line"></use>
-									</svg>
-								</li>
-							</a>
-							<a href="#">
-								<li class="icon__bnt">
-									<svg class="icon icon--linkedin-line">
-										<use href="./img/svgsprite/sprite.symbol.svg#linkedin-line"></use>
-									</svg>
-								</li>
-							</a>
-						</ul>
+							<p class="title_footer">Increase the flow of&#160;customers and sales for your business with digital marketing & growth solutions.</p>
+						</div>
+						<div class="icon__footer">
+							<h4>Social media</h4>
+							<ul class="team__aitem-footer">
+								<a href="#">
+									<li class="icon__bnt">
+										<svg class="icon icon--istagram-line">
+											<use href="./img/svgsprite/sprite.symbol.svg#instagram-line"></use>
+										</svg>
+									</li>
+								</a>
+								<a href="#">
+									<li class="icon__bnt">
+										<svg class="icon icon--twitter-line">
+											<use href="./img/svgsprite/sprite.symbol.svg#twitter-line"></use>
+										</svg>
+									</li>
+								</a>
+								<a href="#">
+									<li class="icon__bnt">
+										<svg class="icon icon--facebook-line">
+											<use href="./img/svgsprite/sprite.symbol.svg#facebook-line"></use>
+										</svg>
+									</li>
+								</a>
+								<a href="#">
+									<li class="icon__bnt">
+										<svg class="icon icon--linkedin-line">
+											<use href="./img/svgsprite/sprite.symbol.svg#linkedin-line"></use>
+										</svg>
+									</li>
+								</a>
+							</ul>
+						</div>
 					</div>
 					<div class="wrap__form">
 						<h4>Subscribe</h4>

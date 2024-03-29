@@ -16,6 +16,12 @@ h4{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @include tablet {
+      background:  linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)), url(../../img/tablet/dark-bg.jpg) lightgray 0px -3.875px / 100% 102.695% no-repeat;;
+    }
 }
 
 .title__geroy{
@@ -35,6 +41,9 @@ h1{
   letter-spacing: 0.72px;
   margin: 72px 0 72px 0;
   max-width: 216px;
+  @include tablet {
+      max-width: 496px;
+  }
 }
 .taitle__modal{
   color: var(--WHITE, #FFF);
@@ -53,6 +62,13 @@ h1{
 
 // advantages -------------------------
 
+.advantages__title{
+  @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
 .advantages{
   padding: 96px 0 96px 0;
   h3{
@@ -72,18 +88,52 @@ h1{
     line-height: 24px;
     letter-spacing: 0.32px;
   }
+  @include tablet {
+      p{
+        max-width: 356px;
+
+      }
+
+  }
 }
 ul .advantages__aitem{
   width: 100% ;
+  @include tablet{
+    flex-basis: calc((100% - 30px) / 2);
+    width: 100%;
+  }
 }
 .advantages__aitem:not(:last-child){
   margin: 0 0 72px 0;
 }
+@include tablet {
+    .advantages__aitem:not(:last-child){
+      margin: 0 0 0 0;
+    }  
+}
+@include tablet {
+  .advantages__aitem:nth-child(-n + 2){
+    margin: 0 0 72px 0;
+  }
+  .advantages__aitem:nth-child(-n + 1){
+    margin: 0 24px 0 0;
+  }
+  .advantages__aitem:nth-child(3){
+    margin: 0 24px 0 0;
+  }
+  .advantages__aitem h3{
+    text-align: left;
+  }
+}
+
+
+
 
 // team ------------------------------
 
 .team{
   background-color: #F4F4FD;
+  padding: 96px 0 96px 0;
 }
 .team__main {
   color: var(--NAVY-BLUE, #2E2F42);
@@ -93,11 +143,17 @@ ul .advantages__aitem{
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.72px;
-  margin: 96px 0 72px 0;
+  margin: 0 0 72px 0;
   max-width: 264px;
 } 
 .team ul li{
   max-width: 264px;
+}
+@include tablet {
+    .flex__team{
+      display: flex;
+      flex-wrap: wrap;
+    }
 }
 .team__title{
   h3{
@@ -131,9 +187,41 @@ ul .advantages__aitem{
 }
 .team ul li:not(:last-child){
   margin: 0 0 72px 0;
+
 }
+@include tablet {
+  .team ul li:not(:last-child){
+    margin: 0 0 0 0;
+  }
+  .team ul .flex__portfolio:nth-child(-n + 2){
+    margin: 0 0 64px 0;
+  }
+  .team ul .flex__portfolio:nth-child(-n + 1){
+    margin: 0 24px 64px 0;
+  }
+  .team ul .flex__portfolio:nth-child(3){
+    margin: 0 24px 0 0;
+  }
+  .a  h3{
+    text-align: left;
+  }
+  .flex__team{
+    display: flex;
+    justify-content: center;
+  }
+  .team__main{
+    max-width: 736px;
+  }
+}
+
 .team ul li{
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+// --------------portfolio-----------------
+
+.portfolio{
+  padding: 96px 0;
 }
 .portfolio h2{
   margin: 0 0 72px 0;
@@ -141,8 +229,50 @@ ul .advantages__aitem{
 .cards__title ul li:not(:last-child){
   margin: 0 0 48px 0;
 }
+@include tablet {
+  .cards__title ul li:not(:last-child){
+    margin: 0 0 0 0;
+  }
+}
 .portfolio__aitem{
   border-right: 1px solid var(--CORNFLOWER, #E7E9FC);
   border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
   border-left: 1px solid var(--CORNFLOWER, #E7E9FC);
+}
+.centre{
+  margin: 32px 0 8px 16px;
+}
+.text__centre{
+  margin: 0 0 32px 16px ;
+}
+.cards__title ul li{
+  cursor: pointer ;
+}
+@include tablet {
+    .cards__portaolio{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    // .portfolio ul .cards__item:not(:last-child){
+    //   margin: 0 0 0 0;
+    // }
+    // .portfolio ul .cards__item:nth-child(-n + 2){
+    //   margin: 0 0 64px 0;
+    // }
+    // .portfolio ul .cards__item:nth-child(-n + 1){
+    //   margin: 0 24px 64px 0;
+    // }
+    // .portfolio ul .cards__item:nth-child(3){
+    //   margin: 0 24px 0 0;
+    // }
+    .portfolio ul .cards__item:nth-child(1){
+      margin: 0 24px 64px 0;
+      }
+    .portfolio ul .cards__item:nth-child(3){
+      margin: 0 24px 64px 0;
+      }
+    .portfolio ul .cards__item:nth-child(5){
+      margin: 0 24px 0 0;
+      }
 }

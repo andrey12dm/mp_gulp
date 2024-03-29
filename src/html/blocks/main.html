@@ -11,7 +11,7 @@
   </section>
   <section class="advantages">
     <div class="wraper">
-      <ul advantages__title>
+      <ul class="advantages__title" >
         <li class="advantages__aitem">
           <h3>Strategy</h3>
           <p>Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
@@ -33,9 +33,11 @@
   </section>
   <section class="team">
     <div class="wraper">
-      <h2 class="team__main">Our Team</h2>
-      <ul>
-        <li>
+      <div class="team__main">
+        <h2 class="team__main">Our Team</h2>
+      </div>
+      <ul class="flex__team">
+        <li class="flex__portfolio">
           <div class="team__title">
             <picture>
               <source srcset="./img/mobile/guerrero.jpg 1x, ./img/mobile/retina/guerrero@2x.jpg 2x" type="image/webp">
@@ -75,7 +77,7 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li class="flex__portfolio">
           <div class="team__title">
             <picture>
               <source srcset="../../img/mobile/ford.jpg 1x, ./img/mobile/retina/ford@2x.jpg 2x" type="image/webp">
@@ -116,7 +118,7 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li class="flex__portfolio">
           <div class="team__title">
             <picture>
               <source srcset="../../img/mobile/garcia.jpg 1x, ./img/mobile/retina/garcia@2x.jpg 2x" type="image/webp">
@@ -157,12 +159,12 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li class="flex__portfolio">
           <div class="team__title">
             <picture>
               <source srcset="../../img/mobile/wilson.jpg 1x, ./img/mobile/retina/wilson@2x.jpg 2x" type="image/webp">
               <source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp">
-              <img src="../../img/mobile/guerrero.png" alt="Mark Guerrero">
+              <img src="../../img/mobile/guerrero.jpg" alt="Mark Guerrero">
             </picture>
             <h3>Daniel Wilson</h3>
             <p>UI Designer</p>
@@ -206,52 +208,79 @@
       <div>
         <h2>Our Portfolio</h2>
         <div class="cards__title">
-          <ul>
-            <li>
-              <img src="" alt="">
+          <ul class="cards__portaolio">
+            <li class="cards__item">
+              <picture>
+                <source srcset="../../img/mobile/banking-app.jpg 1x, ./img/mobile/retina/banking-app@2x.jpg 2x" type="image/webp">
+                <source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp">
+                <img src="../../img/mobile/banking-app.jpg" alt="Banking App">
+              </picture>
               <div class="portfolio__aitem">
-                <h4>Banking App</h4>
-                <p>App</p>
+                <h4 class="centre">Banking App</h4>
+                <p class="text__centre">App</p>
               </div>
             </li>
-            <li>
+            <li class="cards__item">
+              <picture>
+                <source srcset="../../img/mobile/cashless-payment.jpg 1x, ./img/mobile/retina/cashless-payment@2x.jpg 2x" type="image/webp">
+                <source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp">
+                <img src="../../img/mobile/cashless-payment.jpg" alt="Mark Guerrero">
+                </picture>
               <div class="portfolio__aitem">
                 <img src="" alt="">
-                <h4>Cashless Payment</h4>
-                <p>Marketing</p>
+                <h4 class="centre">Cashless Payment</h4>
+                <p class="text__centre">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="cards__item">
+              <picture>
+                <source srcset="../../img/mobile/meditation-app.jpg 1x, ./img/mobile/retina/meditation-app@2x.jpg 2x" type="image/webp">
+                <source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp">
+                <img src="../../img/mobile/meditation-app.jpg" alt="Mark Guerrero">
+              </picture>
               <div class="portfolio__aitem">
-                <img src="" alt="">
-                <h4>Meditation App</h4>
-                <p>App</p>
+                <h4 class="centre">Meditation App</h4>
+                <p class="text__centre">App</p>
               </div>
             </li>
-            <li>
+            <li class="cards__item">
+              <picture>
+                <source srcset="../../img/mobile/taxi-service.jpg 1x, ./img/mobile/retina/taxi-service@2x.jpg 2x" type="image/webp">
+                <source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp">
+                <img src="../../img/mobile/taxi-service.jpg" alt="Mark Guerrero">
+              </picture>
               <div class="portfolio__aitem">
-                <img src="" alt="">
-                <h4>Taxi Service</h4>
-                <p>Marketing</p>
+                <h4 class="centre">Taxi Service</h4>
+                <p class="text__centre">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="cards__item">
+              <picture>
+                <source srcset="../../img/mobile/screen-lllustrations.jpg 1x, ./img/mobile/retina/screen-lllustrations@2x.jpg 2x" type="image/webp">
+                <source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp">
+                <img src="../../img/mobile/screen-lllustrations.jpg" alt="Mark Guerrero">
+              </picture>
               <div class="portfolio__aitem">
-                <img src="" alt="">
-                <h4>Screen Illustrations</h4>
-                <p>Design</p>
+                
+                <h4 class="centre">Screen Illustrations</h4>
+                <p class="text__centre">Design</p>
               </div>
             </li>
-            <li>
+            <li class="cards__item">
+              <picture class="marttert">
+                <source srcset="../../img/mobile/online-courses.jpg 1x, ./img/mobile/retina/online-courses@2x.jpg 2x" type="image/webp">
+                <source srcsset="./img/mobile/garcia.webp 1x, ./img/mobile/wilson@2x.webp 2x" type="image/webp">
+                <img src="../../img/mobile/online-courses.jpg" alt="Mark Guerrero">
+              </picture>
               <div class="portfolio__aitem">
-                <img src="" alt="">
-                <h4>Online Courses</h4>
-                <p>Marketing</p>
+                
+                <h4 class="centre">Online Courses</h4>
+                <p class="text__centre">Marketing</p>
               </div>
             </li>
           </ul>
         </div>
-      </div>
+      </div>  
     </div>
   </section>
 </main>

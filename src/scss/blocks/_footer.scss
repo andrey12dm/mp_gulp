@@ -1,7 +1,19 @@
 .footer{
 	background: var(--NAVY-BLUE, #2E2F42);
 }
-
+@include desktop {
+	.flex__footer-global{
+		display: flex;
+	}
+	.flex__footer{
+		margin: 0 120px 0 0;
+		
+	}
+	.flex__footer a{
+		display: flex;
+		align-items: flex-start;
+	}
+}
 .text__footer{
 	color: var(--CLOUD, #F4F4FD);
 	font-family: Raleway;
@@ -37,6 +49,15 @@
 		margin: 18px 24px 0 0;
 		max-width: 264px;
 	}
+	@include desktop {
+		margin: 18px 0 0 0;
+			
+	}
+}
+@include desktop {
+	.icon__footer{
+		margin: 0 80px 0 0;
+	}
 }
 .icon__footer h4{
 	color: #FFFFFF;
@@ -62,6 +83,9 @@
 	@include tablet {
 			text-align-last: left;
 			margin: 72px 0 16px 147px;
+	}
+	@include desktop {
+		margin: 72px 0 16px 27px;
 	}
 }
 .form__email{
@@ -91,6 +115,9 @@ padding: 8px 16px;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 0 0 96px 0;
+	@include desktop {
+			flex-wrap: nowrap;
+	}
 }
 .footer__bnt{
 	border-radius: 4px;

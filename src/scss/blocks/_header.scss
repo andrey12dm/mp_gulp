@@ -2,6 +2,19 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@include desktop {
+		display: flex;
+		justify-content: flex-start;	
+	}
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+@include desktop {
+	.logo__header{
+		margin: 0 76px 0 0;
+	}
 }
 .logo__color{
 	color: var(--IRIS, #4D5AE5);
@@ -24,13 +37,22 @@
 	text-transform: uppercase;
 	}
 	.title__menu,.title__mobile{
-		display: block;
+		display: none;
+		@include tablet {
+				display: block;
+		}
 	}
 	.header__nav-btn{
-		display: none;
+		display: block;
+		@include tablet {
+			display: none;	
+		}
 	}
 	.header__menu{
 		display: flex;
+		@include desktop {
+				margin: 0 332px 0 0;
+		}
 	}
 	.header__menu li:not(:last-child){
 		margin: 0 40px 0 0;
@@ -48,10 +70,21 @@
 		color: var(--OCEAN, #404BBF);
 		transition: all 0.2s ease-in;
 	}
-	.title__mobile ul{
+	@include tablet {
+		.title__mobile ul{
 		display: flex;
 		flex-direction: column-reverse;
+			@include desktop {
+				flex-direction: row
+			}
+	}	
 	}
+	@include desktop {
+		.title__mobile ul li:not(:last-child){
+			margin: 0 40px 0 0;
+		}
+	}
+	
 	.title__mobile{
 			a{
 				color: var(--SLATE, #434455);
@@ -84,19 +117,38 @@
 		border-radius: 2px;
 		background: var(--OCEAN, #404BBF);
 	}
+	//--------------overlay-------------------
+	.box__overlay{
+		position: relative;
+    overflow: hidden;
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: var(--IRIS, #4D5AE5);
+		transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+	}
+	.cards__item:hover .box__overlay .overlay{
+		display: inline-block;
+		transform: translateY(0%);
+    transition: transform 250ms ease-in-out;
+			// display: flex;
+			// align-items: center;
+	}
+	.overlay{
+		p{
+			color: var(--CLOUD, #F4F4FD);
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0.32px;
+			max-width: 296px;
+			margin: 40px 32px 0;
 
-	
-	// .underlining {
-	// 	position: relative;
-	// }
-	// .underlining::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 4px;
-	// 	background-color: #2196f3;
-	// 	border-radius: 2px;
-	// }
-	
+		}
+	}

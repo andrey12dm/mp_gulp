@@ -28,6 +28,12 @@
 		"body": ["@include mobile {", "    ${1}", "}"],
 		"description": "mobile"
 	},
+	"mediaDesktop": {
+		"scope": "css,scss",
+		"prefix": "desktop",
+		"body": ["@include desktop {", "    ${1}", "}"],
+		"description": "desktop"
+	},
 
 	/* CSS, SCSS snippets */
 	"bgimg: Background image": {

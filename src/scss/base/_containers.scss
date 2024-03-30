@@ -15,6 +15,11 @@
 		padding: 0 16px ;
 		margin: 0 auto;
 	}
+	@include desktop{
+		max-width: 1158px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
 }
 .container {
 	margin: 0 auto;
@@ -32,20 +37,12 @@
 .container-left-50 {
 	padding: 0 var(--container-padding);
 	max-width: 50%;
-
-	@include mobile {
-		max-width: 100%;
-	}
 }
 
 .container-right-50 {
 	padding: 0 var(--container-padding);
 	max-width: 50%;
 	margin-left: auto;
-
-	@include mobile {
-		max-width: 100%;
-	}
 }
 
 .container-right {
@@ -79,10 +76,6 @@
 	@include tablet {
 		padding-left: var(--container-padding);
 	}
-
-	@include mobile {
-		padding: 0 var(--container-padding);
-	}
 }
 
 .container-half-right {
@@ -97,7 +90,7 @@
 		padding-right: var(--container-padding);
 	}
 
-	@include mobile {
+	@include desktop {
 		padding: 0 var(--container-padding);
 	}
 }

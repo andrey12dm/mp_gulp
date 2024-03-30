@@ -10,6 +10,18 @@
 	width: 16px;
 	height: 16px;
 }
+.icon__advantages{
+	fill: transparent;
+	stroke: transparent;
+	width: 64px;
+	height: 64px;
+}
+.icon--antenna-line,
+.icon--clock-line,
+.icon--diagram-line,
+.icon--astronaut-line{
+	fill: black;	
+}
 .icon__bnt{
 	fill: transparent;
 	stroke: transparent;
@@ -20,9 +32,14 @@
 .icon--istagram-line,
 .icon--twitter-line,
 .icon--facebook-line,
-.icon--linkedin-line,
-.icon--bnt-line{
+.icon--linkedin-line{
 	fill: #F4F4FD;
+}
+.advantages__icon{
+	padding: 24px 100px;
+	border-radius: 4px;
+	border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+	background: var(--CLOUD, #F4F4FD);
 }
 .team__aitem{
 	padding: 0 0 32px 0;
@@ -46,4 +63,11 @@
 }
 .team__aitem-footer a:not(:last-child){
 	margin: 0 16px 0 0 ;
+}
+.icon__button{
+	width: 24px;
+	height: 24px;
+}
+.icon--bnt-line{
+	fill: #FFFFFF;
 }

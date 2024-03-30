@@ -10,8 +10,8 @@
 	}
 }
 
-@mixin mobile () {
-    @media (max-width: 820px) {
+@mixin desktop () {
+    @media (min-width: 1158px) {
 		@content;
 	}
 }

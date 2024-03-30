@@ -191,7 +191,7 @@ ul .advantages__aitem{
 .advantages__icon{
   display: none;  
   @include desktop {
-    display: block;  
+    display: inline-block;  
   }
 }
 
@@ -258,6 +258,9 @@ ul .advantages__aitem{
 }
 .team ul li:not(:last-child){
   margin: 0 0 72px 0;
+  @include tablet {
+    margin: 0;  
+  }
 }
 @include desktop {
   .team ul li:not(:last-child){
@@ -268,19 +271,19 @@ ul .advantages__aitem{
   .team ul .flex__portfolio:nth-child(-n + 2){
     margin: 0 0 64px 0;
     @include desktop {
-      margin: 0;
+      margin: 0 24px 0 0;
     }
   }
   .team ul .flex__portfolio:nth-child(-n + 1){
     margin: 0 24px 64px 0;
     @include desktop {
-      margin: 0;
+      margin: 0 24px 0 0;
     }
   }
   .team ul .flex__portfolio:nth-child(3){
     margin: 0 24px 0 0;
     @include desktop {
-      margin: 0;
+      margin: 0 24px 0 0;
     }
   }
   .a  h3{
@@ -314,6 +317,10 @@ ul .advantages__aitem{
 }
 .cards__title ul li:not(:last-child){
   margin: 0 0 48px 0;
+  @include desktop {
+  margin: 0;
+      
+  }
 }
 .portfolio__aitem{
   border-right: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -340,19 +347,19 @@ ul .advantages__aitem{
       }
     .portfolio ul .cards__item:nth-child(3){
       margin: 0 24px 64px 0;
+      @include desktop {
+      margin: 0 0 64px 0;
+      }
       }
     .portfolio ul .cards__item:nth-child(5){
       margin: 0 24px 0 0;
       }
 }
 @include desktop {
-  .portfolio ul .cards__item:nth-child(1){
-    margin: 0;
+  .portfolio ul .cards__item:nth-child(2){
+    margin: 0 24px 64px 0;
     }
-  .portfolio ul .cards__item:nth-child(3){
-    margin: 0;
-    }
-  .portfolio ul .cards__item:nth-child(5){
-    margin: 0;
+    .portfolio ul .cards__item:nth-child(4){
+      margin: 0 24px 0 0;
     }
 }

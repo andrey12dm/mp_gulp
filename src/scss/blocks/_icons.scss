@@ -65,9 +65,36 @@
 	margin: 0 16px 0 0 ;
 }
 .icon__button{
+	fill: transparent;
+	stroke: transparent;
 	width: 24px;
 	height: 24px;
 }
 .icon--bnt-line{
 	fill: #FFFFFF;
+}
+//---------modal------
+.icon__popup{
+	fill: transparent;
+	stroke: transparent;
+	width: 18px;
+	height: 18px;
+}
+.icon__popup-wrap{
+	fill: transparent;
+	stroke: transparent;
+	width: 18px;
+	height: 24px;
+}
+.icon--person-black-line,
+.icon--email-black-line,
+.icon--phone-black-line,
+.icon--close-black-line{
+	fill: #2E2F42;
+}
+.icon__close{
+	fill: transparent;
+	stroke: transparent;
+	width: 8px;
+	height: 8px;
 }

@@ -1,7 +1,7 @@
 .footer{
 	background: var(--NAVY-BLUE, #2E2F42);
 	padding: 96px 0;
-
+	border-bottom: 1px solid #ECECEC; ;
 
 }
 @include desktop {
@@ -97,6 +97,7 @@
 }
 .subscribe{
 	color: var(--WHITE, #FFF);
+	font-family: Roboto;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
@@ -135,14 +136,14 @@
 	display: flex;	
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 72px 0 0 0;
+	padding: 72px 0 0 0;
 	@include tablet {
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
 	}
 	@include desktop {
-		margin:0;
+		padding: 0;
 		align-items: start;
 	}
 }
@@ -262,7 +263,6 @@
 	line-height: normal;
 	letter-spacing: 0.12px;
 	margin: 0 0 4px 0;
-
 }
 .form__textarea {
 	width: 360px;

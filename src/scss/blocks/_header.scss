@@ -1,3 +1,6 @@
+header{
+	border-bottom: 1px solid #ECECEC; ;
+}
 .title__header{
 	display: flex;
 	justify-content: space-between;
@@ -142,6 +145,7 @@
 	.overlay{
 		p{
 			color: var(--CLOUD, #F4F4FD);
+			font-family: Roboto;
 			font-size: 16px;
 			font-style: normal;
 			font-weight: 400;

@@ -10,6 +10,12 @@
 	width: 16px;
 	height: 16px;
 }
+.icon__footer-wraper {
+	fill: transparent;
+	stroke: transparent;
+	width: 24px;
+	height: 24px;
+}
 .icon__advantages{
 	fill: transparent;
 	stroke: transparent;
@@ -52,9 +58,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+	transition: var(--transition);
 		&:hover{
 			background-color:var(--GREEN, #31D0AA);
-			transition: all 0.2s ease-in;
 			
 		}
 }

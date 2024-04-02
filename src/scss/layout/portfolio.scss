@@ -1,0 +1,35 @@
+//Global Style-----------------
+
+
+
+// menu ------------
+.menu{
+  margin: 60px 0 0 0;
+  @include tablet {
+      display: flex;
+      justify-content: center;
+  }
+}
+
+.menu__item{
+  display: inline;
+  background: #F5F4FA;
+  border-radius: 4px;
+  display: inline-flex;
+  
+}
+.menu__item:hover{
+  background-color: #4D5AE5;
+  
+}
+.link__item{
+  color: #212121;
+  padding:6px 22px 6px 22px;
+  transition: all 0.3s ease-in;
+}
+.link__item:hover{
+  color: #fff;
+}
+.box_item{
+  padding: 6px 25px;
+}

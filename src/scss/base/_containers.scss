@@ -21,12 +21,20 @@
 		margin: 0 auto;
 	}
 }
-.container {
-	margin: 0 auto;
-	padding: 0 var(--container-padding);
-
-	max-width: var(--wraper-mobil);
-	width: 100%;
+.conteiner{
+	max-width: var(--conteiner-mobil);
+	padding: var(--conteiner-center-mobile) ;
+	margin: var(--conteiner-padding);
+	@include tablet {
+		max-width: 768px;
+		padding: 0 15px ;
+		margin: 0 auto;
+	}
+	@include desktop{
+		max-width: 1200px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
 }
 
 .container-full {

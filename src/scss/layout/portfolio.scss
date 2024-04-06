@@ -1,6 +1,33 @@
 //Global Style-----------------
 
-
+//--------------------owerlay--------------------
+.overlay-li:hover .owerlay__box .overlay__portfolio{  
+  transform: translateY(0%);
+}
+.owerlay__box{
+  position:relative;
+  overflow: hidden;
+}
+.overlay__portfolio{
+  background-color: #4D5AE5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms  ease-in-out;
+}
+.overlay__text{
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.54px;
+  padding: 40px 32px 0 32px;
+}
 
 // menu ------------
 .menu{
@@ -16,6 +43,7 @@
   background: #F5F4FA;
   border-radius: 4px;
   display: inline-flex;
+  transition: all 0.3s ease-in;
   
 }
 .menu__item:hover{
@@ -25,7 +53,6 @@
 .link__item{
   color: #212121;
   padding:6px 22px 6px 22px;
-  transition: all 0.3s ease-in;
   a{
     color: #FFF;
     text-align: center;
@@ -67,9 +94,15 @@
 }
 .product__item{
 	max-width: 450px;
+  cursor: pointer;
   @include tablet {
       max-width: 354px;
   }
+}
+.product__item:hover{
+  border: 1px solid #EEE;
+  background: #FFF;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .product__item img{
 	max-width: 450px;
@@ -98,10 +131,17 @@
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 1.08px;
-    padding: 20px 24px 0 24px;
+    padding: 20px 23px 0 24px;
   }
-  p{
-    color: #757575;
+  .product__bloc{
+    border: 1px solid #EEE;
+  }
+  @include desktop {
+      max-width: 370px;
+  }
+}
+.card__text{
+  color: #757575;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -109,26 +149,17 @@
     line-height: 30px;
     letter-spacing: 0.48px;
     padding: 4px 24px 20px;
-  }
-  .product__bloc{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-  }
-  @include desktop {
-      max-width: 370px;
-  }
 }
 .product__list{
-  p{padding: 4px 24px 20px;
+  .card__text{padding: 4px 24px 20px;
   }
     @include tablet {
-      p{
+      .card__text{
         padding: 4px 24px 56px;
       }   
     }
     @include desktop {
-      p{padding: 4px 24px 20px;
+      .card__text{padding: 4px 24px 20px;
       }
     }
 }

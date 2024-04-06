@@ -224,21 +224,19 @@ ul .advantages__aitem{
 .flex__team{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  @include desktop {
+      flex-wrap: nowrap;
+  }
 
 }
 .team ul li{
   max-width: 264px;
-}
-@include tablet {
-    .flex__team{
-      display: flex;
-      flex-wrap: wrap;
-    }
 }
 .team__title{
   h3{
@@ -304,10 +302,6 @@ ul .advantages__aitem{
   }
   .a  h3{
     text-align: left;
-  }
-  .flex__team{
-    display: flex;
-    justify-content: center;
   }
   .team__main{
     max-width: 736px;

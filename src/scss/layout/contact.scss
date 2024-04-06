@@ -114,6 +114,12 @@ span{
       width: 445px;
   }
 }
+.input__color:focus{
+  border: 1px solid var(--main-orange, #FF622A);
+}
+.form__textarea:focus{
+  border: 1px solid var(--main-orange, #FF622A);
+}
 .contact__fotm{
   display: flex;
   flex-direction: column;

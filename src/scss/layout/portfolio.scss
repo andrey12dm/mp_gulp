@@ -1,4 +1,9 @@
 //Global Style-----------------
+.product__cards{
+  padding: 60px 0 0 0;
+  
+}
+  
 
 //--------------------owerlay--------------------
 .overlay-li:hover .owerlay__box .overlay__portfolio{  
@@ -31,7 +36,6 @@
 
 // menu ------------
 .menu{
-  margin: 60px 0 0 0;
   @include tablet {
       display: flex;
       justify-content: center;
@@ -71,7 +75,7 @@
   padding: 6px 25px;
 }
 .product{
-  padding: 40px 0 60px 0;
+  padding: 50px 0 94px 0;
 }
 .product__title{
   display: flex;

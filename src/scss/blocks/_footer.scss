@@ -76,6 +76,12 @@
 .wrap__form{
 	display: flex;
 	justify-content: center;
+	margin: 72px 0 0 0;
+	@include desktop {
+	margin: 0;
+			
+	}
+
 }
 .wrap__form h4{
 	color: var(--WHITE, #FFF);
@@ -136,7 +142,6 @@
 	display: flex;	
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 72px 0 0 0;
 	@include tablet {
 		display: flex;
 		align-items: flex-end;
@@ -152,6 +157,7 @@
 	background: var(--IRIS, #4D5AE5);
 	// display: flex;
 	color: var(--WHITE, #FFF);
+	font-family: Roboto;
 	text-align: center;
 	font-size: 16px;
 	font-style: normal;

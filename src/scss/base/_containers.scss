@@ -25,6 +25,8 @@
 	max-width: var(--conteiner-mobil);
 	padding: var(--conteiner-center-mobile) ;
 	margin: var(--conteiner-padding);
+	display: flex;
+	justify-content: center;
 	@include tablet {
 		max-width: 768px;
 		padding: 0 15px ;

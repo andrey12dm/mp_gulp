@@ -1,10 +1,7 @@
 //Global Style-----------------
 .product__cards{
   padding: 60px 0 0 0;
-  
 }
-  
-
 //--------------------owerlay--------------------
 .overlay-li:hover .owerlay__box .overlay__portfolio{  
   transform: translateY(0%);
@@ -48,11 +45,12 @@
   border-radius: 4px;
   display: inline-flex;
   transition: all 0.3s ease-in;
-  
+}
+.menu__item:not(:last-child){
+  margin: 0 4px 0 0;
 }
 .menu__item:hover{
   background-color: #4D5AE5;
-  
 }
 .link__item{
   color: #212121;
@@ -104,14 +102,13 @@
   }
 }
 .product__item:hover{
-  border: 1px solid #EEE;
   background: #FFF;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .product__item img{
-	max-width: 450px;
   @include tablet {
       max-width: 354px;
+      height: 242px;
   }
   @include desktop {
       max-width: 370px;

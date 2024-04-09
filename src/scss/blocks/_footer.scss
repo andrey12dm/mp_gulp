@@ -208,10 +208,14 @@
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	max-width: 408px;
-	height: 581px;
-	padding-top: 30px;
+	max-width: 288px;
+	height: 623px;
+	padding-top: 72px;
 	background-color: #fff;
+	@include tablet {
+		max-width: 408px;
+		height: 584px;
+	}
 }
 .form__x {
 	position: absolute;
@@ -231,22 +235,29 @@
 	color: #212121;
 	text-align: center;
 	font-family: Roboto;
-	font-size: 20px;
+	font-size: 16px;
 	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	letter-spacing: 0.6px;
-	margin: 0 0 10px 0;
+	font-weight: 500;
+	line-height: 24px; /* 150% */
+	letter-spacing: 0.32px;
+	@include tablet {
+		width: 360px;
+		margin: 0 0 16px 0;
+	}
 }
 .form__inp {
 	display: block;
 	position: relative;
-	width: 360px;
+	width: 256px;
 	height: 40px;
 	border-radius: 4px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	margin: 0 0 10px 0;
-	padding: 8px 16px 8px 38px;
+	padding: 8px 16px 8px 34px;
+	@include tablet {
+	width: 360px;
+			
+	}
 }
 .form__inp:focus {
 	border-radius: 4px;
@@ -270,19 +281,23 @@
 	letter-spacing: 0.12px;
 	margin: 0 0 4px 0;
 }
-.form__textarea {
-	width: 360px;
+.form__textarea-popap {
+	width: 256px;
 	height: 120px;
 	flex-shrink: 0;
 	padding: 12px 16px;
 	border-radius: 4px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	resize: none;
+	@include tablet {
+	width: 360px;
+			
+	}
 }
 .form__checkbox {
 	display: flex;
 	justify-content: center;
-	margin: 16px 0 40px 0;
+	margin: 16px 0 24px 0;
 }
 .form__checkboxx {
 	margin: 0 7px 0 0;
@@ -318,10 +333,15 @@
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	padding: 28px 32px;
 	display: inline-flex;
-	display: inline-flex;
 	padding: 16px 32px;
 	align-items: flex-start;
 	gap: 10px;
+	@include tablet {
+		width: 169px;
+		padding: 16px 32px;
+		justify-content: center;
+			
+	}
 }
 .form__bn {
 	display: flex;
@@ -336,23 +356,32 @@
 .form__inp{
 	position: relative;
 }
+.box-popap{
+	position: relative;
+}
 .icon__item-person{
 	position: absolute;
-	top: 116px;
-	left: 39px;
+	top: 29px;
+	left: 16px;
+
 }
 .icon__item-email{
 	position: absolute;
-	top: 248px;
-	left: 39px;
+	top: 26px;
+	left: 16px;
 }
 .icon__item-phone{
 	position: absolute;
-	top: 181px;
-	left: 39px;
+	top: 26px;
+	left: 16px;
+
 }
 .icon__item-close{
 	position: absolute;
-	right: 32px;
-	top: 32px;
+	top: 24px;
+	right: 24px;
+	padding:8px;
+	background: #E7E9FC;
+	border-radius: 50%;
+	box-sizing:content-box;
 }

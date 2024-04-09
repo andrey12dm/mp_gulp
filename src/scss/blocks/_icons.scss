@@ -94,8 +94,7 @@
 }
 .icon--person-black-line,
 .icon--email-black-line,
-.icon--phone-black-line,
-.icon--close-black-line{
+.icon--phone-black-line{
 	fill: #2E2F42;
 }
 .icon__close{
@@ -103,4 +102,7 @@
 	stroke: transparent;
 	width: 8px;
 	height: 8px;
+}
+.icon--close-black-line{
+	fill: #2E2F42;
 }

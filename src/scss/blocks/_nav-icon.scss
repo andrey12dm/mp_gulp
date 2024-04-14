@@ -10,12 +10,7 @@
 
 	--color: #000;
 	--radius: 4px;
-
-	/* Fixed height and width */
-	/* height: var(--height); */
-	/* width: var(--width); */
-
-	/* Dynamic height and width */
+	
 	height: calc(var(--line-height) * 3 + var(--spacing) * 2);
 	width: var(--width);
 
@@ -50,12 +45,10 @@
 }
 
 .nav-icon::before {
-	/* top: calc(var(--line-height) * -2); */
 	top: calc(-1 * (var(--line-height) + var(--spacing)));
 }
 
 .nav-icon::after {
-	/* top: calc(var(--line-height) * 2); */
 	top: calc(var(--line-height) + var(--spacing));
 }
 
@@ -82,11 +75,4 @@
 
 .mobile-nav-btn {
 	z-index: 999;
-	// display: none;
 }
-
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }

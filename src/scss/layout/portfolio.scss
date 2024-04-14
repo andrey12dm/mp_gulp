@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 .overlay__portfolio{
-  background-color: #4D5AE5;
+  background-color:var(--IRIS);
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
   transition: transform 250ms  ease-in-out;
 }
 .overlay__text{
-  color: #FFF;
+  color: var(--WHITE);
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -41,7 +41,7 @@
 
 .menu__item{
   display: inline;
-  background: #F5F4FA;
+  background: var(--dark-white);
   border-radius: 4px;
   display: inline-flex;
   transition: all 0.3s ease-in;
@@ -50,13 +50,13 @@
   margin: 0 4px 0 0;
 }
 .menu__item:hover{
-  background-color: #4D5AE5;
+  background-color:var(--IRIS);
 }
 .link__item{
   color: #212121;
   padding:6px 22px 6px 22px;
   a{
-    color: #FFF;
+    color: var(--WHITE);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -67,7 +67,7 @@
   }
 }
 .link__item:hover{
-  color: #fff;
+  color: var(--WHITE);
 }
 .box_item{
   padding: 6px 25px;
@@ -102,7 +102,7 @@
   }
 }
 .product__item:hover{
-  background: #FFF;
+  background:var(--WHITE);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .product__item img{
@@ -125,7 +125,7 @@
       max-width: 354px;
   }
   h3{
-    color: #212121;
+    color: var(--BLACK);
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
@@ -142,7 +142,7 @@
   }
 }
 .card__text{
-  color: #757575;
+  color:var(--series);
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;

@@ -1,8 +1,11 @@
 .footer{
-	background: var(--NAVY-BLUE, #2E2F42);
+	background: var(--NAVY-BLUE);
 	padding: 96px 0;
 	border-bottom: 1px solid #ECECEC; ;
-
+	@include desktop {
+	padding: 100px 0;
+			
+	}
 }
 @include desktop {
 	.flex__footer-global{
@@ -18,7 +21,7 @@
 	}
 }
 .text__footer{
-	color: var(--CLOUD, #F4F4FD);
+	color: var(--CLOUD);
 	font-family: Raleway;
 	font-size: 18px;
 	font-style: normal;
@@ -29,7 +32,7 @@
 	text-align: center;
 	}
 .color__web{
-	color: var(--IRIS, #4D5AE5);
+	color: var(--IRIS);
 	font-family: Raleway;
 	font-size: 18px;
 	font-style: normal;
@@ -39,7 +42,7 @@
 	text-transform: uppercase;
 }
 .title_footer{
-	color: var(--CLOUD, #F4F4FD);
+	color: var(--CLOUD);
 	font-family: Roboto;
 	font-size: 16px;
 	font-style: normal;
@@ -63,7 +66,7 @@
 	}
 }
 .icon__footer h4{
-	color: #FFFFFF;
+	color:var(--WHITE);
 	font-family: Roboto;
 	font-size: 16px;
 	font-style: normal;
@@ -84,7 +87,7 @@
 
 }
 .wrap__form h4{
-	color: var(--WHITE, #FFF);
+	color: var(--WHITE);
 	font-family: Roboto;
 	font-size: 16px;
 	font-style: normal;
@@ -102,7 +105,7 @@
 	}
 }
 .subscribe{
-	color: var(--WHITE, #FFF);
+	color: var(--WHITE);
 	font-family: Roboto;
 	font-size: 16px;
 	font-style: normal;
@@ -116,12 +119,12 @@
 }
 .form__email{
 	border-radius: 4px;
-	border: 1px solid var(--WHITE, #FFF);
+	border: 1px solid var(--WHITE);
 	opacity: 0.3;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	background: var(--NAVY-BLUE, #2E2F42);
 	width: 100%;
-	color: var(--WHITE, #FFF);
+	color: var(--WHITE);
 	font-family: Roboto;
 	font-size: 12px;
 	font-style: normal;
@@ -154,9 +157,9 @@
 }
 .footer__bnt{
 	border-radius: 4px;
-	background: var(--IRIS, #4D5AE5);
+	background: var(--IRIS);
 	// display: flex;
-	color: var(--WHITE, #FFF);
+	color: var(--WHITE);
 	font-family: Roboto;
 	text-align: center;
 	font-size: 16px;
@@ -174,10 +177,15 @@
 	height: 40px;
 	@include tablet {
 	margin: 0 0 0 24px;
+	transition: var(--transition);
 	}
 	@include desktop {
 			margin: 39px 0 0 24px;
 	}
+}
+.footer__bnt:hover{
+	background-color: var(--GREEN
+	);
 }
 .team__aitem-footer{
 	display: flex;
@@ -211,7 +219,7 @@
 	max-width: 288px;
 	height: 623px;
 	padding-top: 72px;
-	background-color: #fff;
+	background-color: var(--WHITE);
 	@include tablet {
 		max-width: 408px;
 		height: 584px;
@@ -261,7 +269,7 @@
 }
 .form__inp:focus {
 	border-radius: 4px;
-	border: 1px solid var(--IRIS, #4D5AE5);
+	border: 1px solid var(--IRIS);
 }
 .human {
 	position: absolute;
@@ -303,7 +311,7 @@
 	margin: 0 7px 0 0;
 }
 .checkbox__text {
-	color: var(--LIGHT-SLATE, #8E8F99);
+	color: var(--LIGHT-SLATE);
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 400;
@@ -311,7 +319,7 @@
 	letter-spacing: 0.48px;
 }
 .checkbox__text a {
-	color: var(--IRIS, #4D5AE5);
+	color: var(--IRIS);
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 400;
@@ -320,7 +328,7 @@
 	text-decoration-line: underline;
 }
 .form__button {
-	color: var(--WHITE, #FFF);
+	color: var(--WHITE);
 	text-align: center;
 	font-family: Roboto;
 	font-size: 16px;
@@ -329,7 +337,7 @@
 	line-height: 24px; /* 150% */
 	letter-spacing: 0.64px;
 	border-radius: 4px;
-	background: var(--IRIS, #4D5AE5);
+	background: var(--IRIS);
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	padding: 28px 32px;
 	display: inline-flex;

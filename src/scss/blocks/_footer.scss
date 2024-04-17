@@ -354,6 +354,12 @@
 			
 	}
 }
+.form__button:hover{
+	border-radius: 4px;
+	background: var(--OCEAN);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	transition: var(--transition);
+}
 .form__bn {
 	display: flex;
 	align-items: center;
@@ -395,4 +401,9 @@
 	background: #E7E9FC;
 	border-radius: 50%;
 	box-sizing:content-box;
+}
+.icon__item-close:hover{
+	background: #404BBF;
+	transition: var(--transition);
+	
 }

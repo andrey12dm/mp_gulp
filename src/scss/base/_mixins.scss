@@ -17,9 +17,8 @@
 }
 
 @mixin secondLevelHeading (){
-color: var(--NAVY-BLUE, #2E2F42);
+color: var(--NAVY-BLUE);
 text-align: center;
-font-family: Roboto;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
@@ -28,8 +27,7 @@ letter-spacing: 0.72px;
 }
 
 @mixin fourthLevelHeading (){
-	color: var(--NAVY-BLUE, #2E2F42);
-	font-family: Roboto;
+	color: var(--NAVY-BLUE);
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 500;

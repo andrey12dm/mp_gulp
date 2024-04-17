@@ -25,7 +25,7 @@ h4{
     background-repeat: no-repeat;
     background-position: center;
     }
-    @include desktop {
+      @include desktop {
       background: linear-gradient(
       0deg,
       rgba(46, 47, 66, 0.7),
@@ -55,7 +55,6 @@ h4{
 .main__heading{
   color: var(--WHITE);
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -75,7 +74,6 @@ h4{
 }
 .taitle__modal{
   color: var(--WHITE);
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -115,7 +113,6 @@ h4{
   }
   h3{
     color: var(--NAVY-BLUE);
-    font-family: Roboto;
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -139,7 +136,6 @@ h4{
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
-    font-family: Roboto;
     @include desktop {
       font-size: 16px;
       font-style: normal;
@@ -239,7 +235,6 @@ ul .advantages__aitem{
 .team__title{
   h3{
     color: var(--NAVY-BLUE);
-    font-family: Roboto;
     text-align: center;
     font-size: 20px;
     font-style: normal;
@@ -249,7 +244,6 @@ ul .advantages__aitem{
   }
   p{
     color: var(--SLATE);
-    font-family: Roboto;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -340,7 +334,6 @@ ul .advantages__aitem{
 }
 .text__centre{
   color: var(--SLATE);
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

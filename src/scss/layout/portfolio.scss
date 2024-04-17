@@ -2,10 +2,21 @@
 .product__cards{
   padding: 60px 0 0 0;
 }
+.conteiner__portfolio{
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 480px;
+  @include tablet {
+      max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px ;
+  } 
+}
 //--------------------owerlay--------------------
 .overlay-li:hover .owerlay__box .overlay__portfolio{  
   transform: translateY(0%);
-}
+} 
 .owerlay__box{
   position:relative;
   overflow: hidden;
@@ -58,7 +69,6 @@
   a{
     color: var(--WHITE);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -68,6 +78,15 @@
 }
 .link__item:hover{
   color: var(--WHITE);
+}
+.menu__item:nth-child(1){
+  margin: 0 4px 15px 0;
+  transition: all 0s ease-in;
+
+  @include tablet {
+  margin: 0;
+      
+  }
 }
 .box_item{
   padding: 6px 25px;
@@ -126,7 +145,6 @@
   }
   h3{
     color: var(--BLACK);
-    font-family: Roboto;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -143,7 +161,6 @@
 }
 .card__text{
   color:var(--series);
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

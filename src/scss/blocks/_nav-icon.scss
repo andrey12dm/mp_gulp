@@ -1,11 +1,11 @@
 /* Nav Icon */
-.mobile-nav-btn {
+.header__nav-btn {
 	--time: 0.1s;
 
 	--width: 40px;
 	--height: 30px;
 
-	--line-height: 4px;
+	--line-height: 2px;
 	--spacing: 6px;
 
 	--color: #000;
@@ -15,18 +15,26 @@
 	width: var(--width);
 
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
-
+.header__nav-btn--mobile{
+	position: absolute;
+	display: block;
+	background-color: var(--page-bg);
+	top: 0;
+	width: 100%;
+	left: 0;
+	height: 100%;
+}
 .nav-icon {
+	display: block;
 	position: relative;
 	width: var(--width);
 	height: var(--line-height);
 	background-color: var(--color);
 	border-radius: var(--radius);
 }
-
 .nav-icon::before,
 .nav-icon::after {
 	content: '';
@@ -50,6 +58,7 @@
 
 .nav-icon::after {
 	top: calc(var(--line-height) + var(--spacing));
+
 }
 
 .nav-icon.nav-icon--active {
@@ -73,6 +82,9 @@
 
 /* Layout */
 
-.mobile-nav-btn {
+.header__nav-btn{
 	z-index: 999;
+	@include tablet {
+			display: none;
+	}
 }

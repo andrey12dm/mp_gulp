@@ -38,6 +38,10 @@ header{
 	line-height: 21px;
 	letter-spacing: 0.54px;
 	text-transform: uppercase;
+	margin: 17px 0;
+	@include tablet {
+			margin: 0;
+	}
 	}
 	.title__menu,.title__mobile{
 		display: none;
@@ -77,7 +81,7 @@ header{
 		display: flex;
 		flex-direction: column-reverse;
 			@include desktop {
-				flex-direction: row
+				flex-direction: row;
 			}
 	}	
 	}
@@ -137,9 +141,7 @@ header{
 		display: inline-block;
 		transform: translateY(0%);
     transition: transform 250ms ease-in-out;
-			// display: flex;
-			// align-items: center;
-	}
+}
 	.overlay{
 		p{
 			color: var(--CLOUD);
@@ -152,4 +154,72 @@ header{
 			margin: 40px 32px 0;
 
 		}
-	}
+}
+	//-------------------------------
+.menu__burger-nav{
+		display: none;
+}
+	// .header__nav-btn--mobile .nav-icon-btn{
+	// 	// display: none;
+	// }
+.header__nav-btn--mobile .icon--close-black-line{
+		display: block;
+}
+.header__nav-btn--mobile .menu__burger-nav{
+		position: absolute;
+		display: block;
+		margin: 72px 0 0 16px;
+}
+.header__nav-btn--mobile .nav-icon.nav-icon--active{
+	position: absolute;
+	top: 24px;
+	right: 24px;
+}
+.header__nav-btn--mobile .burger__link{
+	color: var(--NAVY-BLUE);
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 0.72px;
+}
+.header__nav-btn--mobile .menu__burger-nav nav ul li{
+	margin: 0 0 40px 0;
+}
+.header__nav-btn--mobile .burger__link:hover{
+	color: var(--OCEAN);
+	transition: var(--transition);
+}
+.header__nav-btn--mobile .title__mobile{
+	display: flex;
+	// flex-direction: ;
+}
+.header__nav-btn--mobile .title__mobile ul{
+	display: flex;
+  flex-direction: column-reverse;
+	margin: 168px 0 0 0;
+}
+.header__nav-btn--mobile .contacts{
+	color: var(--SLATE);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px; 
+	letter-spacing: 0.4px;
+}
+.header__nav-btn--mobile .contacts:hover{
+	color: var(--IRIS);
+}
+.header__nav-btn--mobile .tel__burger	{
+	margin: 0 0 24px 0;
+}
+.icon__sprite{
+	display: none;
+}
+.header__nav-btn--mobile .icon__sprite{
+	display: block;
+	margin: 48px 0 0 0;
+}
+.header__nav-btn--mobile .team__aitem-footer a:not(:last-child) {
+	margin: 0 40px 0 0;
+}

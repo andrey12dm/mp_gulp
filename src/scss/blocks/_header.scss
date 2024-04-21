@@ -1,4 +1,4 @@
-header{
+	header{
 	border-bottom: 1px solid #ECECEC; ;
 }
 .title__header{
@@ -7,7 +7,7 @@ header{
 	align-items: center;
 	@include desktop {
 		display: flex;
-		justify-content: flex-start;	
+		justify-content: flex-start;
 	}
 }
 .flex{

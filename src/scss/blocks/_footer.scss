@@ -7,6 +7,12 @@
 			
 	}
 }
+.flex__footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
 @include desktop {
 	.flex__footer-global{
 		display: flex;
@@ -51,9 +57,10 @@
 	letter-spacing: 0.32px;
 	margin: 18px 0 72px 0;
 	text-align: left;
+	max-width: 288px;
 	@include tablet {
 		margin: 18px 24px 0 0;
-		max-width: 264px;
+			width: 264px;
 	}
 	@include desktop {
 		margin: 18px 0 0 0;
@@ -145,11 +152,13 @@
 	display: flex;	
 	flex-wrap: wrap;
 	justify-content: center;
+	max-width: 289px;
 	@include tablet {
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: flex-end;
 		justify-content: center;
+		max-width: 453px;
 	}
 	@include desktop {
 		padding: 0;

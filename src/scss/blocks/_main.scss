@@ -85,14 +85,21 @@ h4{
   transition: var(--transition);
 }
 .advantages__title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @include tablet {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
+      align-items: flex-start;
       justify-content: center;
   }
   @include desktop {
       display: flex;
       flex-wrap: nowrap;
+      align-items: flex-start;
   }
 }
 .advantages{
@@ -142,7 +149,7 @@ h4{
   }
 }
 ul .advantages__aitem{
-  width: 100% ;
+  max-width: 288px;
   @include tablet{
     flex-basis: calc((100% - 30px) / 2);
     width: 100%;
@@ -319,11 +326,42 @@ ul .advantages__aitem{
 .cards__title ul li{
   cursor: pointer ;
 }
-@include tablet {
-    .cards__portaolio{
+.cards__portaolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: row;
+      align-items: flex-start;
+  }
+  @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+.cards__item{
+  max-width: 288px;
+  @include tablet {
+    max-width: 356px;
+    @include desktop {
+      width: 360px;
+    }
+  }
+}
+.cards__title{
+  @include tablet {
+      width: 736px;
+    }
+    @include desktop {
+        width: 1128px;
+    }
+  }
+@include tablet {
+    
+    .cards__portaolio{
     }
     .portfolio ul .cards__item:nth-child(1){
       margin: 0 24px 64px 0;

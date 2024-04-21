@@ -37,7 +37,7 @@
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 21px; /* 116.667% */
+	line-height: 21px;
 	letter-spacing: 0.54px;
 	text-transform: uppercase;
 }
@@ -159,7 +159,6 @@
 .footer__bnt{
 	border-radius: 4px;
 	background: var(--IRIS);
-	// display: flex;
 	color: var(--WHITE);
 	font-family: Roboto;
 	text-align: center;
@@ -247,7 +246,7 @@
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 24px; /* 150% */
+	line-height: 24px;
 	letter-spacing: 0.32px;
 	@include tablet {
 		width: 360px;
@@ -318,7 +317,7 @@
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 14px; /* 116.667% */
+	line-height: 14px;
 	letter-spacing: 0.48px;
 }
 .checkbox__text a {
@@ -337,7 +336,7 @@
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 24px; /* 150% */
+	line-height: 24px;
 	letter-spacing: 0.64px;
 	border-radius: 4px;
 	background: var(--IRIS);
@@ -369,7 +368,6 @@
 	opacity: 0;
 	pointer-events: none;
 }
-//----------поз. иконок--------------
 .form__inp{
 	position: relative;
 }

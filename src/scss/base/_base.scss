@@ -2,14 +2,12 @@ html {
 	scroll-behavior: smooth;
 	background-color: rgb(39, 39, 39);
 }
-
 body {
 	background-color: var(--page-bg);
 	font-family: var(--font-main);
 	color: var(--text-color);
 	text-wrap: balance;
 }
-
 img {
 	display: block;
 }
@@ -18,7 +16,6 @@ code {
 	padding: 0.2rem;
 	border-radius: 4px;
 }
-
 pre.code {
 	overflow-x: auto;
 	background-color: #e9f1f6;

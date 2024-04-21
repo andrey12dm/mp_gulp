@@ -2,7 +2,6 @@
 input{
 font-family: Outfit;
 }
-
 .wraper{
   padding: 0 15px;
   @include tablet {
@@ -17,7 +16,6 @@ font-family: Outfit;
     }
     @include desktop {
       padding: 100px 0 40px 0;
-        
     }
 }
 .color__title{
@@ -28,10 +26,8 @@ font-family: Outfit;
   @include desktop {
     width: 1110px;
     padding: 0 95px;
-
   }
 }
-
 .heading{
   color: var(--text-dark);
   font-feature-settings: 'clig' off, 'liga' off;

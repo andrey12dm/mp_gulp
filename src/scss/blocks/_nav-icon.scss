@@ -2,8 +2,8 @@
 .header__nav-btn {
 	--time: 0.1s;
 
-	--width: 40px;
-	--height: 30px;
+	--width: 24px;
+	--height: 24px;
 
 	--line-height: 2px;
 	--spacing: 6px;
@@ -71,7 +71,6 @@
 	transition: top var(--time) linear,
 		transform var(--time) ease-in var(--time);
 }
-
 .nav-icon.nav-icon--active::before {
 	transform: rotate(45deg);
 }

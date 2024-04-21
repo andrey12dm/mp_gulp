@@ -159,9 +159,11 @@ header{
 .menu__burger-nav{
 		display: none;
 }
-	// .header__nav-btn--mobile .nav-icon-btn{
-	// 	// display: none;
-	// }
+.header__nav-btn{
+	display: block;
+	cursor: pointer;
+
+}
 .header__nav-btn--mobile .icon--close-black-line{
 		display: block;
 }

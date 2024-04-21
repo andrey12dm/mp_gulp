@@ -53,7 +53,7 @@
 .nav-icon.nav-icon--active::after {
 	top: 0;
 	transition: top var(--time) linear,
-		transform var(--time) ease-in var(--time);
+	transform var(--time) ease-in var(--time);
 }
 
 .nav-icon.nav-icon--active::before {

@@ -176,9 +176,9 @@
 	align-items: center;
 	gap: 16px;
 	height: 40px;
+	transition: var(--transition);
 	@include tablet {
 	margin: 0 0 0 24px;
-	transition: var(--transition);
 	}
 	@include desktop {
 			margin: 39px 0 0 24px;

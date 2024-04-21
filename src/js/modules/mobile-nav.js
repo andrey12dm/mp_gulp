@@ -1,4 +1,4 @@
-const navBtn = document.querySelector('.nav-icon-btn');
+const navBtn = document.querySelector('.header__nav-btn');
 const navIcon = document.querySelector('.nav-icon');
 const nav = document.querySelector('.header__nav-btn');
 

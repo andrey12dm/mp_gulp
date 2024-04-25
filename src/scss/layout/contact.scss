@@ -78,7 +78,7 @@ font-family: Outfit;
     line-height: 28px;
   }
 }
-span{
+.faq{
   color: var(--main-orange);
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Outfit;
@@ -187,6 +187,7 @@ span{
   font-weight: 300;
   line-height: 24px;
   padding: 15px 30px;
+  resize: none;
   @include tablet {
       width: 350px;
       height: 134px;
